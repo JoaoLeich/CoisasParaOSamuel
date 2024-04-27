@@ -1,0 +1,36 @@
+Java 7
+
+trabalhar com pacotes em java separando as classes e etc
+
+seguir convencao de nomes de pacotes - nome_dominio_contrario e o conteudo do projeto ex: com.github.joaotrevoso.erp
+
+modificador acesso  -
+
+public e default - public qualquer um acessa
+
+default - nao é especificado / somente as classes do msm pacote podem acessa la
+
+private - só a propria classe pode acessa la 
+
+static import - importa só uma coisa estatica seja metodo ou mebro de uma classe
+
+ex: 
+
+package a;
+
+import static a.idiomas.Bananao.seta;
+
+public class Main {
+    
+    public static void main(String[] args) {
+       
+        seta(); // metodo estatico da classe bananao
+       
+        
+    }
+    
+}
+
+possivel ter mais de uma clsse em um mesmo arquivo mas somente uma pode ser publica e o nome do arquivo deve ser o nome da classe publica 
+
+possivel retornar um objeto instanciado na hr do return como construtor 

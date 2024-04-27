@@ -1,0 +1,17 @@
+Coisas de estudo
+
+StringBuilder - fazer novas Strings a partir dela 
+
+Enhanced for - tds as classes q i	mplementam iterable(tal classe retorna um iterator)
+
+Implementar interface comparable caso queira fazer comparacoes de ordem na classe
+
+Metodo estatico compareTO deve ser implementado retornando 0 se for igual ao objeto atual 
+-1 se for menor e maior 1  se for maior 
+usando this e o objeto passado no argumento
+
+Boa pratica smp usar a msm proprieadae do metodo equals para o metodo compareTo
+
+Comparator / comparable - comparable geralmente é uma classe que se compara consigo mesma
+
+Comparator - cria uma classe de comparacao

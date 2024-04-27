@@ -1,0 +1,55 @@
+Regex
+
+Por meio de uma expressao definimos uma serie de coisas a serem analisadas pela mesma 
+
+nos retornando de sa nossa String corresponde e e valida a expressao ou nao
+
+Patterns.matches() se bate
+
+. - qualquer coisa / * - zero ou muitas vezes
+
++ - uma ou muitas coisas
+
+\. - queremos ver se tem o ponto literal
+
+. queremos ver se tem qualquer coisa
+
+escapar barra - \\
+
+{n,m} - no minimo n no maximo m
+
+intervalo - [a-z] - todo o intervalo entre a até z no minusculo
+
+Web scraper 
+
+() - grupo ex: joao_pedro_almeida / regex: "joao(.*)almeida"- captura o pedro q é um grupo neste intervalo
+
+porem pe necessario tambem criar a expresao dentro dos parenteses para especificar oq vai extrair
+
+regex nada mais é dq uma expressao compilada
+
+Pattern a = Pattern.compile(passa o regex) 
+
+variavel a contem nossa expressao compilada
+
+Matcher b = a.matcher(texto a ser verificado) - b tem a implementacao atraves do a para buscar as correspondencias
+
+matcher.find - encontra correspondencias a partir das especificadas la em cima
+
+matcher.group() - recebe um inteiro como parametro representando o grupo a ser analisado
+
+Operador ganancioso - .* esse representa qualquer coisa uma ou muitas vezes ou seja engole a string
+
+caso coloque .*? ele se torna teimoso e para no primeito encontro ex:
+
+<.*?> - qualquer coisa dentro da tag html mas parara no primeiro fechamento da mesma
+
+\\s - pega espacos e quebras de linhas
+
+metodo replaceAll pode receber um regex tambem e ser bater algum na string substitui tambem 
+
+metodo split deivide a string em partes a partir de um regex tamebm e conjuntos[]
+
+StringBuilder - bom para ir criando strings 
+
+Text block - """ abre """ fecha n precisa de concatencao nem caracteres de escape  

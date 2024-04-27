@@ -1,0 +1,34 @@
+Java 8
+
+api da classe - é oq pode ser usado publico
+
+copia defensiva - instancia um novo objeto do tipo desejado e atribui a variavel de classe com a copia defensiva
+
+classes imutaveis e mutaveis - mutaveis possuem os setters - ja as imutaveis as variaveis sao final e instanciadas no construtor 
+
+value objects - objetos de valor q nao podem ser mudados ex: Nota fiscal 
+
+ja uma classe carro pode ser mutavel pois a cor por exemplo pode mudar 
+
+records - servem para criar tais classes q armazenam valores
+
+- public record Nome("Variaveis")
+
+cria o construtor de forma automatica e tambem atribui as variaveis o valor passado
+
+possivel de se criar a logica do construtor e os demais metodos do objeto / cria getter com nome do metodo o msm da variavel ()
+
+tagged class - uma classe q tem diversas responsibilidades q se diferem por uma variavel de instancia
+
+como herdar? - extends
+
+sobreescrita de metodos - escrever sobre metodo ja existentes da classe pai mudando seus comportamentos
+
+necessario assinatura identica 
+
+protected - classes q herdam podem aceesar seu membro protected ou q estao no mesmo pacote 
+
+@nome - rotulo / carimbo 
+
+@ovverride - sobreescrita de um metodo
+

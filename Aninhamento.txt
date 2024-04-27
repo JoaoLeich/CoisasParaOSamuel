@@ -1,0 +1,56 @@
+Aninhamento
+
+Classe dentro de classe	
+
+Aninhadas estaticas - nao tem acesso as variaves nem metodos da classe mae 
+
+Somente se criar uma instancia da classe mae dentro da classe aninhada
+
+somente tem acesso aos membros estaticos da classe mae
+
+Pra criar uma Um.dois a = new Um.dois // um sendo a classe mae e dois sendo a classe aninhada 
+
+Classes aninhadas nao estaticas 
+
+Tem acesso aos membros privados da classe mae
+
+Como criar um? - um a = new um(); cria classe mae
+
+	dois b = a.new dois(); cria classe aninhada a partir de uma variavel de instancia da classe mae
+
+Como acessar uma parte da classe mae com this?
+
+um.this.variavel - colocando o nome da classe mae na frente temos acesso ao this desta calsse 
+
+
+Classes locais - dentro de um bloco de codigos e nao tem modificadores de acesso pois só existira dentro do escopo do codigo
+
+	tal classe consegue acessar metodos e variaveis da classe mae e do metodo porem novamente só existe dentro do bloco de codigo 
+
+Classes anonimas - Implementar uma interface / classe abstrata sem necessidade de dar um nome a mesma
+
+voce declara e ja implementa a mesma ex:
+
+
+	new Transacao(){ bloco de codigo...};
+
+	transacao é a interface ou seja instanciamos a interface ja implementando ela ou seja ela existe ja porem nao tem nome
+
+é possivel criar uma variavel que receba essa instancia ex:
+
+Transacao d = new Transacao(){} 
+
+e no return:
+
+	return d; pois a mesma ja foi instanciada e implementada
+
+
+ou return new Transacao(){implementa o codigo...};
+
+e retorna essa classe sem nome
+
+possivel tambem de se usar classes / interfaces etc..
+
+ex classe: Conta a = new Conta(){implementa codigo};
+
+basicamente essa classe q vamos impolementar gerda Conta mas com suas prorpias implementacoes 

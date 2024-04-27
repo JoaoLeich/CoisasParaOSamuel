@@ -1,0 +1,13 @@
+Maps 
+
+Maps - chaves q armazenam valores 
+
+HashMap - usa hash e tabela hash 
+
+Map<Classe q sera usada como chave,Classe q representa os valores>;
+
+HashTable n permite valor nem chave nula 
+
+Collections.unmodifable() - retorna uma collection q so podera ser feito a leitura da mesma jogando excecao caso tente adicionar ou remover
+
+Possivel de se trabalhar com arrays com listas // nao redimensiona o tamanho do array

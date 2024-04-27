@@ -1,0 +1,27 @@
+java 13
+
+Prefira composicao dq heranca 
+
+composicao - "tem um"
+
+interfaces q representam os comportamentos do objeto
+
+ou seja criar interfaces q representam os comportamentos dos objeto e os objetos tem essas interfaces em si
+
+acoplamento - uma subclasse tem a necessidade de saber mt da super - classe pra poder funcionar corretamente 
+
+Delegacao - Inferir um objeto de super classe em uma subclasse e usar os metodos dessa superclasse na subclasse 
+
+DecorattorPattern - "embrulha"
+
+criar uma classe abstrata q delega todos os metodos da interface e depois herda as demais classes mudando somente o necessario 
+
+delegacao - encaminhar os metodos
+
+Criar classe abstrata q só delega as chamadas e herdar dela apos
+
+uma conta vai puxando a outra 
+
+evitar criar default methods em interfaces q ja existem ou estao implementando elas 
+
+declarar variaveis com tipos mais abstratos caso nao haja a necessidade de acessar um metodo mais especifico 

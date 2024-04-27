@@ -1,0 +1,29 @@
+Collections / ArrayList
+
+interface collection -> list / set / | interface map nao é uma collection mas esta dentro do framewrok
+
+Listas - fila / pilha / lista ligada / ArrayList / Vector / LinkedList
+
+ArrayList - sempre q remover algo da lista ele move todos os itens para a esquerda para preencher buracos vazios
+
+move todos para a direita para adicionar 
+
+busca rapida pois internamente é um array / iteracao tambem
+
+metodo contains arraylist usa o object.equals ou seja é necessario reescrevelo pq o esquals so compara a msm instanciacao e n seu conteudo
+
+indexOF - retorna o indice do objeto q sera buscado 
+
+remvove e add - remove joga os objetos pra esquerda no array e add sem ser no final joga os objetos para direita
+
+removeALL - recebe uma collection podendo ser uma arraylist para comparacao e remocao
+
+Iterator - objeto pra percorre uma lista de objetos
+
+n e possivel de se mudar a lista enquanto ela esta sendo iterada 
+
+itrator<>a = Collections.iterator();
+
+remove / next 
+
+ListIterator - consegue fazer td do iterator tradicional e tambem ir de tras pra frente

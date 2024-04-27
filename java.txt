@@ -1,0 +1,37 @@
+java
+
+javac - compilar
+
+java nome_arquivo executar
+
+possivel de se usar printf com mascara
+
+ler dado do buffer {
+
+import java.util.Scanner;
+
+Scanner dado = new Scanner(System.in);	
+
+String nome = dado.nextLine();
+
+next(tipo);
+
+dado.nextInt / dado.nextDouble
+}
+
+switch expressions - switch com -> podendo ter mais de um valor de comparacao , variavel pode receber o valor de retorno do switch
+
+{
+
+results = switch(x){
+	
+	case "dom" -> "abert";
+
+	case "ter","seg","sab" -> "fechado";
+
+	default -> "n deu boa";
+
+};
+
+}
+

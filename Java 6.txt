@@ -1,0 +1,27 @@
+Java 6
+
+Boa pratica atribuir null a objetos nao referenciados mais ou objetos obsoletos
+
+Construtores - chamamos quando instanciamos objetos 
+
+N possui retorno e possui o msm nome da Classe
+
+Possivel criar sobrecarga de construtores assim como metodos passando quantidades variadas de parametros 
+
+Boa pratica validar construtores
+
+Usando objects
+
+Throw new IllegalExecption - excessao joga ela caso de erro
+
+this() - serve tambem para chamar outros construtuores como se fosse um metodo
+
+necessario ser a primeira isntrucao 
+
+vai encadeando os contrutores um chamando o outro com  os parametros padroes eetc
+
+dentro do constutor é possivel definir o valor de uma constante final
+
+somente um construtor pode atribuir 
+
+UUID - codigos aleatorios a partir desta classe

@@ -1,0 +1,26 @@
+Collections2 
+
+LinkedList
+
+Funciona por meio de nos um apotnta para o outro / tem referencia do incio e do fim
+
+Acesso aleatorio mais lento / pois percorre do comeco ao item desejado 
+
+mais performance em adicao e remocao / pois n é um vetor ou seja n é necessario mover para a direita ou esquerda 
+
+indices das cadeias de nós e nao posicoes do array 
+
+Vector - thread safe / interrompe tds os processos até q o processo do vector seja executado
+
+Boa pratica smp referencias as classes pelas suas interfaces afim de criar um maior nivel de abstracao e menor acoplamento
+
+ex: List a / pode ser Arraylist/Linkedlist/Vector
+
+metodo sort tem como argumento um comparator q é uma interface de comparacao 
+
+Comparator.naturalOrder etc... / metodo estatico q retorna um comparator de ordem natural 
+
+Pra ser possivel de se utilizar sort a classe q sera comparada deve implementar comparable 
+
+agora para definir um tipo de ordenacao para o metodo sort deve existir uma classe q extenda comparator e q defina oq é maior q oq
+

@@ -1,0 +1,10 @@
+Analise de algoritimos
+
+Big O notation - define a "performance" de um algorutimo no pior cenario de solucao / o maximo de tempo ou espaco q um algorutumo precisa pra solucionar um problema 
+
+ex: O(N) - cresce linearmente conforme a entrada de dados
+
+Omega notatio - Mellhor dos cenarios
+
+?(N) - diminui linearmente conforme a entrada de dados 
+

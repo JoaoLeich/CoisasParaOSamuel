@@ -1,0 +1,7 @@
+Strings
+
+caso criadas sem construtor cria em um lugar denominado pool de strings pois caso se crie mais uma string com o msm conteudo as duas apontam para o msm objeto contendo o msm conteudo 
+
+indexof - string e indice
+
+classe imutavel o conteudo do objeto nao pode ser alterado 

@@ -1,0 +1,60 @@
+Selection sort
+
+	Buscamos o menor valor do array e salvamos sua posicao em uma variavel
+2 lacos for
+
+1 para iterar o array normalmente 
+Outro para percorrer o array buscando a posicao do menor valor sendo o comeco desde array o valor primeiro for mais um para nao gerar conflito
+
+dps de encontrar a posicao do menor valor fazemos uma troca sendo o valor da posicao do array em i
+recebendo o valor do array na posicao do menor valor
+
+a posicao do menor valor tambem esta em constante troca devido ao segundo for sempre comecar dps do valor trocado 
+
+ex:  
+
+	      
+        
+        int []a =  {64, 25, 12, 22, 11,89,43,12,0,1,2,31,4,6};
+        
+        int j = 0;
+        
+        int i = 0;
+        
+        int min_index;
+        
+        //Primeira iteracao  
+        
+        for(i = 0; i <= a.length - 1;i++){
+            
+           //recebe o valor de i para comparacoes 
+           min_index = i;
+            
+           //Segundo for sempre comecando uma posicao apos o i para n dar conflito e dividir o array
+            for(j = i + 1; j <= a.length - 1; j++){
+                
+                
+                if(a[j] < a[min_index]){
+                
+                    //Atualizamos a posicao do menor valor conforme as comparacoes
+                    min_index = j;
+                    
+                }
+                
+            }
+            
+            //realizamos a troca 
+            if(min_index != i){
+            
+                int c = a[i];
+            
+                a[i] = a[min_index];
+            
+                a[min_index] = c;
+            }
+        }
+        
+       
+        System.out.println(Arrays.toString(a));
+        
+    }

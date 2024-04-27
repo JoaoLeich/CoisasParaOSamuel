@@ -1,0 +1,35 @@
+Java 12
+
+abstract class - classe abstrata 
+
+não é concreta n deve ser permitido instanciacao
+
+metodo abstrato - nao tem implementacao as suas subclasses obrigratoriamente devem fazer um overrite
+
+Interfaces 
+
+contratos entre duas partes especificando oq deve fazer 
+
+header da funcao por exemplo
+
+interfaces assim como classes abstratas nao podem ser instanciadas
+
+uma classe so pode herdar uma outra super classe ja interfaces podem ter varias 	
+
+Nem sempre se resolve td somente com heranças e classes
+
+Uma classe so pode herdar uma unica classe mas pode implementar diversas
+interfaces
+
+metodo default em interface - a possibilidade de inserir um comrpo no metodo
+da interface como padrao
+
+possivel de se misturar objetos abstratos com interfaces e caso o objeto abstratoq herdamos ja implemente a interface nao ha a necessidade de se implementar a msm dnv 
+
+private torna possivel de se criar o corpo do metodo na interface 
+
+possivel tambem de se criar metodos estaticos 
+
+Tambem aceitam constantes 
+
+e tambem possivel de ser herdar outras interfaces 	

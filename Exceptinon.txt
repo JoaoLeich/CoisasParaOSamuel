@@ -1,0 +1,42 @@
+Exceptinon
+
+Desviam do curso normal do programa 
+
+Exceptions tambem sao objetos e podem ser instanciados e no contrutor possivel de descrever oq deu errado
+
+lancar throw refencia_da_excecao
+
+ou throw new exception;
+
+exemplos de algumas ; IllegalArgumentExcpetion / IllegalStatemantException
+
+Objects.Requirenonnull - objeto n nulo 
+
+Os objetos de excecoes sao jogados as chamadas anteriores na call stack até q algum bloco de codigo resolva - o 
+
+stack trace - lista da pilha de chamadas q leva ao erro 
+
+bloco try catch - para tratamento de Excecoes 
+
+bloco try - executa oq pode gerar excecao
+
+catch() -  Pega o objeto da excpetion / Deve ser do msm tipo da Excecao retornada ex: Metodo retorna uma IllegalArgument no catch deve ser
+
+catch(IllegalArgumetn e) - e a variavel de excecao
+
+continua a execao do programam após isso pois o problema foi tratado
+
+oq colocar dentro do try - depende se quiser q oq esteja avaixo seja executado n deve ser colocado pois se der exceptionele vai direto pro catch
+
+possivel de se relancar a excessao q se capturou com o catch
+
+possivel tambem de se criar mais blocos catch
+
+Throwable -> excpetion -> Runtimeexception 
+
+unchecked exceptions - excecoes q necessitam de captura e tratamento obrigatoriamente / herda de RuntimeExcpetion
+
+checked exceptions - necessitam obrigatoriamente de tratamento / herdam somente de exception
+
+error - a jvm lanca e n deve ser tratado 
+

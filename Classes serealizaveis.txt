@@ -1,0 +1,45 @@
+Classes serealizaveis
+
+Implementam a interface serealizable obrigatoriamente
+
+transiet na variavel da classe - ignora a serelizacao
+
+SerialVersionUid - versao da classe que é verificada a cada vez que for desserializar a classe serializada caso for diferente da erro(Java calcula aleatoriamente se nao for criado uma variavel que contem tal informacao)
+
+
+//Objeto a ser serializado
+        var c = new SlaQUem("pedro", 20);
+        
+        //Caminho de destiono do objeto
+        Path pt = Path.of("docs\\objeto.ser");
+        
+        //OutputStream para Criar o arquivo com o Objeto 
+        try(var sla = new ObjectOutputStream(Files.newOutputStream(pt,StandardOpenOption.WRITE.CREATE))){
+        
+            //Cria o objeto
+            sla.writeObject(c);
+            
+        }catch(IOException e){
+        
+        e.printStackTrace();
+        
+        }
+    
+        //Le o objeto a partir de um inputStream
+        try(ObjectInputStream ds = new ObjectInputStream(Files.
+                newInputStream(pt,StandardOpenOption.READ))){
+        
+            //N recebe o retorno de read(retorna um Object necessario casting);
+            var n = (SlaQUem)ds.readObject();
+        
+            System.out.println(n);
+            
+        }catch(IOException | ClassNotFoundException e){
+        
+            e.printStackTrace();
+            
+        }
+
+        
+        
+        

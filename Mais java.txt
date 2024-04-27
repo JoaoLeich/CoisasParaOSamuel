@@ -1,0 +1,35 @@
+Mais java
+
+Static - modificador de escopo de varivael logo se torna global
+
+uma q variavel q vale para todas as classes
+
+certo - acessar diretamente pela classe pois é uma variavel de classe
+
+e nao da instancia do objeto
+
+ Naosei x = new Naosei();
+  
+ Naosei.b = 110; //b - static certo acessando pela classe
+        
+ n.b = 10; // objeto n acessando static b errado
+
+possivel tambem criar metodos staticos somente a classe chama
+
+com isso possivel criar classes utilitarias / n precisam do objeto em si 
+
+só se usa a classe e diretamente seus metodos 
+
+entede-se por instancia cada objeto criado
+
+instancia consegue acessar algo estatico já ao contrario n é possivel
+
+porem possivel passar argumento de instancia e assim efetuar seja la oq for
+
+final = nao permite alterar valor apos primeira atribuicao 
+
+misturar static com final - cria constante de classe
+
+nome da constante todo em maiusculo
+
+var - incia variavel com o tipo do valor atribuidos

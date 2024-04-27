@@ -1,0 +1,19 @@
+Java 9
+
+Super - chama os metodos da classe pai/mae 
+
+Sobreescrita de metodos - possivel de abrir mais a protecao em relacao ao metodo da classe pai
+
+ex: classe mae private e classe q herda public da certo
+
+toda classe herda da classe object 
+
+super(); - chama o construtor da super classe;
+
+Boa pratica - reescrever metodo toString - 
+
+metodo to string retorno um hash do objeto
+
+e bom reescrever pois quando chama- lo mostra o estado do objeto
+
+record ja implementa a sobreescrita do tostring 

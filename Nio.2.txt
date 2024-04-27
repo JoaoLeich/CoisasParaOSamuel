@@ -1,0 +1,66 @@
+Nio.2
+
+Io nao blocking - permite programacao paralela 
+
+Path - representa um caminho // Path.of() instanciar objeto // Resolver - junta dois caminho em um so 
+
+Files - classe new Io para manipulacao com metodos
+
+Files.copy(origem,destino,opcao para caso exista substituir) copia arquivos
+
+
+       Path fornecedor = Path.of("docs/joao");
+     
+       Path sla = Path.of("coisa.txt");
+       
+       Path e = Path.of("test\\jao");
+       
+       //Copia de um para outro
+       Files.copy(fornecedor.resolve(sla),e.resolve(sla));
+     
+       
+       //move de um para outro e substitui caso exista
+       Files.move(fornecedor.resolve(sla),e.resolve(sla),StandardCopyOption.REPLACE_EXISTING);
+       
+Metodo delete apaga arquivos e pastas mas so apaga pastas se estiver vazia 
+
+WalkFileTree - Move pereante os subdiretorios (comeco,interface para avanco e acoes nos diretorios);
+
+
+       Files.walkFileTree(Path.of("docs"),new SimpleFileVisitor<>(){
+     
+           @Override
+           //Acao a cada File visitado
+           public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+      
+           System.out.println(file.getFileName().toString());
+           
+           //Interface que define oq sera feito dps
+           return FileVisitResult.CONTINUE;
+           
+           }
+
+           //Define oq sera feito com cada pasta apos passar por cada arquvio
+           @Override
+           public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+           
+               System.out.println(dir.getFileName().toString());
+               
+           return FileVisitResult.CONTINUE;
+           
+           }
+           	
+
+FIles.list - retorna uma stream de files
+
+   //Metodo find recebe o comeco da busca / Ate onde vai e um Bifunction para 
+        //comparar e selecionar os files desejados no stream
+        
+       try( var stream = Files.find(Path.of("docs"), Integer.MAX_VALUE,
+                (file , atrb) -> file.getFileName().toString().matches(".*\\.txt"))){
+       
+      
+           stream.forEach(System.out::println);
+       
+       }
+

@@ -1,0 +1,49 @@
+mais java 4
+
+Classe arrays - classe utilitaria para trabalhar com array
+
+importar - java.util.ARRAYS
+
+ex array de objetos: 
+
+ opo aluno = new opo();
+     
+        aluno.n = new Naosei[3]; // cria o objeto array do tipo nsei
+        
+        aluno.n[0] = new Naosei(); // cria o objeto nsei pra poder usar
+    
+        for (int i = 0; i < aluno.n.length ; i++) {
+            
+            Naosei p = new Naosei();
+            
+            p.a = 10;
+            
+            p.c = "opa";
+            
+            aluno.n[i] = p;
+            
+        }
+        
+        for (int i = 0; i < aluno.n.length ; i++) {
+            System.out.println(aluno.n[i].a + " " + aluno.n[i].c);
+        }
+        
+    }
+
+
+coppyof - cpoiar um array e indicar tamanho podendo aumentar 
+
+ex:  Naosei n[] = new Naosei[0];
+   
+   void adicionar(Naosei p){
+       
+       this.n = Arrays.copyOf(n, n.length + 1);
+       
+       this.n[n.length - 1 ] = p;
+       
+   }
+
+
+Arraylist - classe de arrays para facilitar faz parte das coleections = Arraylist<Tipo só aceita classe>nome = new Arraylist<>();
+
+n precisa inferir tamanho 

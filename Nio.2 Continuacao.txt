@@ -1,0 +1,38 @@
+Nio.2 Continuacao
+
+Buffer - regiao q contem um espaco de algo
+
+ByteBuffer.alocatte(1024) //1kB - Byffer de byte
+
+flip - volta o ponteiro converte o limite para o quanto voltou
+
+Limit - o quanto é possivel de colocar de dados
+
+Decodificar bytebuffer - charbuffer
+
+Charsert cd = StandardCharset.UTF8 - define o padrao de bytes para letras
+
+CharByffer lm = cd.decode(ByteByffer);
+
+
+        //Diretorio do arquvio
+       Path cd = Path.of("docs\\joao\\weeee.txt");
+       
+       //Cria um canal de transimssao de bytes com o diretorio desejado e a opcao dq fazer
+        ByteChannel by = Files.newByteChannel(cd,StandardOpenOption.READ);
+        
+        ByteBuffer bt = ByteBuffer.allocate(1024);
+        
+        //transfere os bytes ao bytebuffer
+        by.read(bt);
+        
+        //volta o ponteiro ao comeco
+        bt.flip();
+        
+        Charset ch = StandardCharsets.UTF_8;
+        
+        //Transforma em CharBuffer
+        var e = ch.decode(bt);
+        
+        System.out.println(e);
+

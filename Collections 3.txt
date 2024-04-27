@@ -1,0 +1,21 @@
+Collections 3
+
+Sets - n permitem duplicacao
+
+Nao tem indice 	/ objetos iguais msm hash 
+
+HashSet - adiciona com codigo hash no array dependendo da implementacao do HashCode 
+
+n garante a ordem dos elementos
+
+TreeSet - Arvore binaria / rubronegra / implementa a interface sortedset q herda set
+
+Necessario implementar a interface comparable pois treeset ordena os itens a seres adicionados da forma q definirmos no compareTO
+
+Compara no compareTO e verifica igualdade de objetos no compareTO tambem
+
+Possivel tambem de criar um comparator e passar como argumento no construtor da classe logo oq definira a ordem dos itens sera o comparator
+
+Equals e compareTo smp iguais 
+
+Cuidado ao usar comparator q compara valores diferentes do equals pq compara objetos com o comparator e ve se os objetos sao iguais tambem com o comparator 

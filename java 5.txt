@@ -1,0 +1,24 @@
+java 5
+
+possivel de se passar e usar argumentos com os args
+
+varargs - argumentos variados - se cria com Ex: Tipo... 
+
+Var e args - ou seja o var idetifica os argumentos e transforma em vetor ou no solo
+
+precisa ser o ultimo da lista
+
+mas pode ser uma ma pratica
+
+java tambem é dividido em heap e stack 
+
+heap - classes/objetos e jvm e stack - chamada de funcoes e variaveis e ponteiros para objetos
+
+Runtime classe que demonstra os valores de memoria do java
+
+java - XmxNumUnidadeMedida - para limitar o uso de memoria da jvm
+
+-Xms - valor q a jvm ja reserva de cara								
+garbage collector - coletor de lixo - apaga os objetos q n tem referencia
+
+System.gc() - solicita o garbage collector mas n é sempre q vem	

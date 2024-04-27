@@ -1,0 +1,9 @@
+Numbers
+
+Usar bigdecimal (classe para numeros com precisao) em vez de float ou double caso a precisao exata seja necessaria
+
+Recebe string do valor como parametro
+
+Caso divida um numero com bigdecimal e seja talvez uma dizima ou valor quebrado necessairo colocar a sobrecarga que recebe quantos numeros dps da casa decimal vai retornar e como ira arrendondar caso arredonde 
+
+com ROundingMOde

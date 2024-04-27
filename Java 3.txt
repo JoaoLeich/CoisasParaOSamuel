@@ -1,0 +1,29 @@
+Java 3
+
+Wrappers tipos "complexos"
+
+classes dos tipos primitivos com metodos proprios
+
+necessario usar valueof pra setar valor // n é nao faz autoboxing
+
+Integer x = 10; - 10 do tipo int e a ide faz a conversao para o integer
+
+
+var - define o tipo automatico da classe baseado nq recebe
+
+operacao de comparacao == com tipos complexos n funciona pois comparamos o endereco de memoria dos mesmos e nao seu conteudo
+
+variaveis de classe sempre sao enderecos para objetos
+
+como comparar? ou usando sua conversao para valor de inteiro
+
+ou usando cmprtp 		
+
+
+    for(int numero : notas){ // numero recebe o conteudo das posicoes de notas[array]
+        
+        System.out.println(numero);
+        
+    }
+
+array tambem é um objeto ou seja necessario instanciar com new e informando seu tamanho

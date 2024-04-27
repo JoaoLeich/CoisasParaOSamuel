@@ -1,0 +1,17 @@
+Enum
+
+Enumeracao com lista finitas de constantes tal qual todas os metodos q recebem um enum somente podem receber valores desta lista definida
+
+metodo ordinal - retorna o valor em inteiro 
+
+tem construtor e e possivel de se ter variaveis e metodos
+
+construtor private ou seja somente a porpria classe pode instanciar o bjeto desta classe
+
+a chamada donconstrutor é nas variaveis/constantes da classe ao lado
+
+possivel tambem de se criar metodos abstrator onde cada variavel do objeto deve implementar 
+
+sendo assim cada variavel do enum pode ter o seu metodo q sera diferenciado pela instancia sla oq eu falei agora nd a v
+
+Boa pratica - dependendo do metodo preferir enuns dq booleanos 	

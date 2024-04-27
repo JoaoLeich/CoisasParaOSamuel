@@ -1,0 +1,32 @@
+exception2 
+
+Caso coloque a incializacao dentro do bloco try fica dentro do escopo dele somente 
+
+Checked exceptions Io... Sempre usar bloco try catch
+
+se herdar de exception se torna uma cheked ja a runtime é uma unchecked
+
+boa pratic lancar excecoes mais especificas 
+
+como criar excecoes personalizadas? Cria uma classe como qualquer outra com o nome dela e Excpetion e dps herda ou de runtime - uncheked ou excpetion - cheked
+
+possivel tambem de ter variaveis e metodos na classe excpetion
+
+caso um metodo lance uma checked exception e n queira tratar no mesmo deve se adicionar throws dps do nome do metodo e o tipo de checkedExcpetion q ele vai lancar para o proximo q ira tratar
+
+lancar a excecao o mais cedo possivel e capturala o mais tarde possivel 
+
+possivel de se aplicar polimorfismo com try catch e exceptions com o catch capturando um mais abrstato
+
+possivel de se tratar as cheked excpetions e em vez de lancar as mais especificas criar uma nova mais generica e lancar ela em vez das q sao tratadas ou lancadas dnv
+
+embrulhar exception orginila dentro da nova q ira ser lancada com construtor w recebe 
+string e a causa
+
+multi catch - separa os exceptions por | com o nome no final
+
+finally - bloco em conjunto com try / catch / caso seja exercutado td do try executa o finally e caso 
+
+caia no catch cai no final no finally 
+
+n estourar excessao nem retornar nd no finally pois vai sobrepor caso haja outra excessao q iria ser lancada pelo catch

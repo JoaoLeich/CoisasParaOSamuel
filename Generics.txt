@@ -1,0 +1,43 @@
+Generics
+
+Usa se para delimitar o escopo de objetos por ex de um arraylist
+
+ArrayList<generics / classe > a = new Arraylist<Classe>;
+
+Metodos genericos <T> - cria se um "tipo novo" q pode ser usado no retorno ou nos argumentos:
+
+public <T> T fazalgo(T[] coisas){} - t sendo nosso novo tipo generico
+
+antes do nome do metodo se especifica o tipo do metodo ; coisa.<String>fazlago(); - retorna String
+ou pode se eliminar <> pois pode definir o T pelo tipo de argumento q foi recebido
+
+pode ter mais de um tipo parametrizado 
+
+Como definir mais de um tipo alem do <T> - t sendo generico ou object
+
+t extends xyz - XYZ podendo ser um supertipo ou seja esse metodo aceita qualquer tipo desde q seja xyz ou herde / implemente xyz
+
+caso colocar um & - define q deve ser mais de um tipo
+
+classe generica - dps do nome da calsse - class coisa <T> - esta classe pode implementar o t nos seus metodos ou variaveis e esse tipo pode ser definido dps na instanciacao da classe
+
+possivel de se criar uma interface generica com um tipo parametrizado x e quando é implementado deve se colocar os dois tipos tanto na classe quanto a interface
+
+public class a <T> implements xyz <T> - t sendi passado pra xyz 
+
+e como definir um tipo descomhecido? alem de object - com " ? " 
+
+ou seja ? refencia um tipo desconhecido podendo ser qualquer coisa n só o tipo dos generics
+
+porem no seu retorno é um object
+
+toda classe numerica extende number 
+
+possivel de se utilizar o extends com o ? - ex : ? extends number
+
+Pode ser qualquer tipo desde q seja um tipo q extende number
+
+isso ArrayList<Number> é diferente disso = ArrayList<Double> - Number é um super tipo de double
+
+agora um arraylist de number n é um super tipo de arraylist de doule 
+

@@ -1,0 +1,35 @@
+Java 9
+
+modificador final em classe e metodo 
+
+em classe - ninguem pode herda - la
+
+metodo com final - ninguem pode sobreescrever ele
+
+bom colocar em metodos getters e setters / metodos sensiveis q dao problema se mudar algo nele
+
+sobreescrever metodos equals - equals compara o endereço de dois objetos
+
+reescrever para nao só comparar os endereços mas tambem o conteudo do objeto
+
+implementar equals em conjunto com hash code smp
+
+Upcasting - criar um novo objeto e fazer q ele suba na hierarquia da classe 
+
+de herdação
+
+Fazer o cast 
+
+ex: Conta conta = (Conta) contabanco;
+
+
+       //upcasting
+       var conta = (Empregado) empregad_joaoo;
+
+
+os dois objetos referenciados sao o msm porem o jeito q sao enxergados sao diferentes 
+
+ele é enxergado como um super porem o objeto dois dois ainda continua sendo o primeiro 
+
+
+       

@@ -1,0 +1,17 @@
+Herdar classe 
+
+Criar a variavel da outra classe dentro da classe selecionada
+
+necessario criar um novo objeto dentro do objeto
+
+Testeum a = new Testeum();
+        
+        a.eit = new sla();
+        
+possivel de definir isso no construtor
+
+e possivel tambem de criar um objeto e atribuir a um objeto este objeto
+
+o endereço do objeto
+
+void aceita retorno só com return 

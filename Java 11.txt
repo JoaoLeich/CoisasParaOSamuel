@@ -1,0 +1,39 @@
+Java 11
+
+Polimorfismo {
+
+
+capacidade de um objeto ser visto de varias maneiras
+
+implicito
+
+heranca e upcasting 
+
+comportamentos diferentes tambem acontecem devido aos diferentes metodos das classes
+
+
+}
+
+downcasting - um super tipo para ser visto como um tipo mais especifico
+
+precisa ser explicito
+
+ma pratica 
+
+operador instanceof - é uma instancia de 
+
+compara tipos de objetos 
+
+em vez de usar instanceof criar metodos na classe super e sobreescrever a partir das classes desejadas
+
+classe concreta / asbtrata 
+
+abstrata mt genérico n deveria permitir a instancia
+
+apenas um conceito e n pratica 
+
+Classe abstrata 
+
+
+metodo abstrato -
+
